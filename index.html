@@ -1,26 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Biblioteca do Bairro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <h1>Biblioteca do Bairro</h1>
-    <p>Livros, revistas e muito mais.</p>
 
+    <header class="cabecalho">
+        <p class="logo"><a href="index.html">Biblioteca do Bairro</a></p>
+    </header>
 
-    <h2>Serviços</h2>
-    <h3>Empréstimo de livros</h3>
-    <h3>Sala de estudo</h3>
-    <h4>Atendimento ao público</h4>
-    <h5>Eventos culturais 👌</h5>
-    <a href="mailto:geral@ipca.pt">Email</a>
+    <nav class="menu" aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html" aria-current="page">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
 
-    <h2>Horário</h2>
-    <h3>Época de exames</h3>
+    <div class="pagina">
+
+    <main>
+        <h1>Biblioteca do Bairro</h1>
+
+        <p class="aviso">Feira do Livro de 13 a 15 de novembro, com 20% de desconto em todos os livros.</p>
+
+        <section class="boas-vindas">
+            <p class="etiqueta">Seja bem-vindo</p>
+            <p class="destaque">Sejam bem-vindos à Biblioteca do Bairro, o lugar onde os livros se tornam portais de conhecimento.</p>
+            <p>Temos mais de doze mil títulos, salas de estudo e uma programação de eventos aberta a toda a comunidade.</p>
+            <a class="botao" href="catalogo.html">Ver o catálogo</a>
+        </section>
+
+        <h2>Serviços</h2>
+        <ul class="cartoes">
+            <li class="cartao">
+                <h3>Empréstimo de livros</h3>
+                <p>Até três títulos por pessoa, durante 21 dias, com renovação online.</p>
+            </li>
+            <li class="cartao">
+                <h3>Sala de estudo</h3>
+                <p>Espaço silencioso com acesso à internet e tomadas em todas as mesas.</p>
+            </li>
+            <li class="cartao">
+                <h3>Época de exames</h3>
+                <p>Horário alargado até às 22h00 nos meses de janeiro e junho.</p>
+            </li>
+        </ul>
+
+        <h2>Próximos eventos</h2>
+        <ul class="cartoes">
+            <li class="cartao">
+                <span class="quando">Sábado, 10h30</span>
+                <h3>Hora do conto</h3>
+                <p>Leitura de histórias para os mais novos, na sala infantil.</p>
+            </li>
+            <li class="cartao">
+                <span class="quando">Quarta, 18h00</span>
+                <h3>Oficina de escrita</h3>
+                <p>Exercícios de escrita criativa orientados pela equipa da biblioteca.</p>
+            </li>
+            <li class="cartao">
+                <span class="quando">Quinta, 18h30</span>
+                <h3>Clube de leitura</h3>
+                <p>Conversa sobre o livro do mês, com chá para todos.</p>
+            </li>
+        </ul>
+
+        <p><a class="botao" href="eventos.html">Ver todos os eventos</a></p>
+    </main>
+
+    <aside>
+        <h2>Horário</h2>
+        <ul class="horario">
+            <li><span>Segunda a sexta</span><span>9h30 - 19h00</span></li>
+            <li><span>Sábado</span><span>10h00 - 13h00</span></li>
+            <li><span>Domingo</span><span>Fechado</span></li>
+        </ul>
+        <h2>Morada</h2>
+        <p>Rua das Flores, 12<br>4700-312 Braga</p>
+        <p><a href="contactos.html">Falar com a biblioteca</a></p>
+    </aside>
+
+    </div>
+
+    <footer class="rodape">
+        <div class="rodape-caixa">
+            <div>
+                <h2>Morada</h2>
+                <p>Rua das Flores, 12<br>4700-312 Braga</p>
+            </div>
+            <div>
+                <h2>Horário</h2>
+                <ul>
+                    <li>Seg a Sex: 9h30 - 19h00</li>
+                    <li>Sábado: 10h00 - 13h00</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contactos</h2>
+                <ul>
+                    <li><a href="tel:+351253000000">253 000 000</a></li>
+                    <li><a href="mailto:geral@bibliotecadobairro.pt">geral@bibliotecadobairro.pt</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="rodape-base">Trabalho de Programação WEB I · João Riccio · 2026</p>
+    </footer>
 
 </body>
 

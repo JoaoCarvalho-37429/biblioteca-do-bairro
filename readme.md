@@ -3,29 +3,19 @@
 Site estático da Biblioteca do Bairro, feito para o projeto final da unidade
 curricular de Programação WEB I.
 
-## Páginas
+## Estrutura
 
-- `index.html` — início, com destaque do mês, serviços, próximos eventos e horário
-- `catalogo.html` — catálogo de livros em grelha, com um título em destaque
-- `eventos.html` — programação em tabela
-- `sobre.html` — história da biblioteca e equipa
-- `contactos.html` — formulário de contacto
-
-## Ficheiros
-
-- `estilos.css` — folha de estilos única, ligada em todas as páginas
+- `index.html` — página única com cinco secções: início, catálogo, eventos,
+  sobre e contactos
+- `estilos.css` — folha de estilos, responsiva (1 coluna em mobile, 3 em ecrãs
+  grandes)
 - `img/` — capas dos livros e retratos da equipa
 
-## Como abrir
+## Navegação
 
-Abrir `index.html` no browser, ou usar o Live Server do VS Code.
+O menu usa âncoras (`#inicio`, `#catalogo`, `#eventos`, `#sobre`,
+`#contactos`), por isso o site inteiro vive num só ficheiro, sem JavaScript.
 
-## Notas técnicas
+## Ficha
 
-- Cores, cantos e sombras definidos em variáveis no `:root`
-- Menu com Flexbox e catálogo com CSS Grid
-- Layout responsivo em três tamanhos, começando pelo telemóvel (375px, 768px e 1024px)
-- Estados de `:hover`, `:focus-visible` e `:active` em links e botões
-- Sem estilos no atributo `style` do HTML
-
-Trabalho de João Riccio (3429).
+Trabalho de João Riccio (3429) · Programação WEB I · 2026

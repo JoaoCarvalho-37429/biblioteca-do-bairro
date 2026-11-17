@@ -14,22 +14,22 @@
 <body>
 
     <header class="cabecalho">
-        <p class="logo"><a href="index.html">Biblioteca do Bairro</a></p>
+        <p class="logo"><a href="#inicio">Biblioteca do Bairro</a></p>
     </header>
 
     <nav class="menu" aria-label="Menu principal">
         <ul>
-            <li><a href="index.html" aria-current="page">Início</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="eventos.html">Eventos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="#inicio" aria-current="page">Início</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contactos">Contactos</a></li>
         </ul>
     </nav>
 
-    <div class="pagina">
+    <div class="pagina" id="inicio">
+        <main>
 
-    <main>
         <h1>Biblioteca do Bairro</h1>
 
         <p class="aviso">Feira do Livro de 13 a 15 de novembro, com 20% de desconto em todos os livros.</p>
@@ -38,7 +38,7 @@
             <p class="etiqueta">Seja bem-vindo</p>
             <p class="destaque">Sejam bem-vindos à Biblioteca do Bairro, o lugar onde os livros se tornam portais de conhecimento.</p>
             <p>Temos mais de doze mil títulos, salas de estudo e uma programação de eventos aberta a toda a comunidade.</p>
-            <a class="botao" href="catalogo.html">Ver o catálogo</a>
+            <a class="botao" href="#catalogo">Ver o catálogo</a>
         </section>
 
         <h2>Serviços</h2>
@@ -76,46 +76,220 @@
             </li>
         </ul>
 
-        <p><a class="botao" href="eventos.html">Ver todos os eventos</a></p>
-    </main>
+        <p><a class="botao" href="#eventos">Ver todos os eventos</a></p>
+        </main>
 
-    <aside>
-        <h2>Horário</h2>
-        <ul class="horario">
-            <li><span>Segunda a sexta</span><span>9h30 - 19h00</span></li>
-            <li><span>Sábado</span><span>10h00 - 13h00</span></li>
-            <li><span>Domingo</span><span>Fechado</span></li>
+        <aside>
+                <h2>Horário</h2>
+                <ul class="horario">
+                    <li><span>Segunda a sexta</span><span>9h30 - 19h00</span></li>
+                    <li><span>Sábado</span><span>10h00 - 13h00</span></li>
+                    <li><span>Domingo</span><span>Fechado</span></li>
+                </ul>
+                <h2>Morada</h2>
+                <p>Rua das Flores, 12<br>4700-312 Braga</p>
+                <p><a href="#contactos">Falar com a biblioteca</a></p>
+            </aside>
+    </div>
+    <div class="pagina sem-lateral" id="catalogo">
+        <main>
+
+        <h1>Catálogo</h1>
+        <p>Estes são os títulos em destaque este mês. Todos podem ser requisitados na receção.</p>
+
+        <section class="catalogo">
+            <article class="livro livro-destaque">
+                <img src="img/livro1.jpg" alt="Capa do livro O Principezinho">
+                <div class="livro-info">
+                    <p class="etiqueta">Destaque do mês</p>
+                    <h3>O Principezinho</h3>
+                    <p class="autor">Antoine de Saint-Exupéry</p>
+                    <p class="autor">Infantil · Disponível</p>
+                    <p>A história de um pequeno príncipe que viaja de planeta em planeta e descobre o que é essencial. Disponível na sala infantil.</p>
+                </div>
+            </article>
+            <article class="livro">
+                <img src="img/livro2.jpg" alt="Capa do livro Ensaio sobre a Cegueira">
+                <h3>Ensaio sobre a Cegueira</h3>
+                <p class="autor">José Saramago</p>
+                <p class="autor">Romance · Disponível</p>
+            </article>
+            <article class="livro">
+                <img src="img/livro3.jpg" alt="Capa do livro Os Maias">
+                <h3>Os Maias</h3>
+                <p class="autor">Eça de Queirós</p>
+                <p class="autor">Romance · Emprestado</p>
+            </article>
+            <article class="livro">
+                <img src="img/livro4.jpg" alt="Capa do livro Mensagem">
+                <h3>Mensagem</h3>
+                <p class="autor">Fernando Pessoa</p>
+                <p class="autor">Poesia · Disponível</p>
+            </article>
+            <article class="livro">
+                <img src="img/livro5.jpg" alt="Capa do livro A Cidade e as Serras">
+                <h3>A Cidade e as Serras</h3>
+                <p class="autor">Eça de Queirós</p>
+                <p class="autor">Romance · Disponível</p>
+            </article>
+            <article class="livro">
+                <img src="img/livro6.jpg" alt="Capa do livro Memorial do Convento">
+                <h3>Memorial do Convento</h3>
+                <p class="autor">José Saramago</p>
+                <p class="autor">Romance · Reservado</p>
+            </article>
+            <article class="livro">
+                <img src="img/livro7.jpg" alt="Capa do livro Livro de Cesário Verde">
+                <h3>Livro de Cesário Verde</h3>
+                <p class="autor">Cesário Verde</p>
+                <p class="autor">Poesia · Disponível</p>
+            </article>
+            <article class="livro">
+                <img src="img/livro8.jpg" alt="Capa do livro Contos">
+                <h3>Contos</h3>
+                <p class="autor">Sophia de Mello Breyner</p>
+                <p class="autor">Contos · Disponível</p>
+            </article>
+        </section>
+
+        <p><a class="botao" href="#contactos">Reservar um livro</a></p>
+        </main>
+    </div>
+    <div class="pagina sem-lateral" id="eventos">
+        <main>
+
+        <h1>Eventos</h1>
+        <p>A programação é gratuita e aberta a toda a comunidade. A entrada é por ordem de chegada.</p>
+
+        <table class="tabela">
+            <caption>Programação de novembro e dezembro</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Data</th>
+                    <th scope="col">Evento</th>
+                    <th scope="col">Local</th>
+                    <th scope="col">Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08 de novembro</td>
+                    <td>Hora do conto</td>
+                    <td>Sala infantil</td>
+                    <td>10h30</td>
+                </tr>
+                <tr>
+                    <td>13 a 15 de novembro</td>
+                    <td>Feira do Livro</td>
+                    <td>Átrio principal</td>
+                    <td>10h00 - 19h00</td>
+                </tr>
+                <tr>
+                    <td>19 de novembro</td>
+                    <td>Oficina de escrita</td>
+                    <td>Sala 2</td>
+                    <td>18h00</td>
+                </tr>
+                <tr>
+                    <td>26 de novembro</td>
+                    <td>Clube de leitura</td>
+                    <td>Sala 2</td>
+                    <td>18h30</td>
+                </tr>
+                <tr>
+                    <td>03 de dezembro</td>
+                    <td>Encontro com autor</td>
+                    <td>Átrio principal</td>
+                    <td>19h00</td>
+                </tr>
+                <tr>
+                    <td>17 de dezembro</td>
+                    <td>Leituras de Natal</td>
+                    <td>Sala infantil</td>
+                    <td>16h00</td>
+                </tr>
+            </tbody>
+        </table>
+        </main>
+    </div>
+    <div class="pagina sem-lateral" id="sobre">
+        <main>
+
+        <h1>Sobre a biblioteca</h1>
+        <p>A Biblioteca do Bairro abriu em 1987 numa sala emprestada pela junta de freguesia, com quatro estantes e pouco mais de trezentos livros. Hoje ocupa o edifício da Rua das Flores e tem mais de doze mil títulos, entre romance, poesia, ensaio, banda desenhada e literatura infantil.</p>
+        <p>Continuamos a ser uma biblioteca de bairro: quem entra é recebido pelo nome, os mais novos têm uma sala só para eles e as quintas-feiras terminam sempre com chá e uma conversa sobre livros.</p>
+
+        <h2>A equipa</h2>
+        <ul class="equipa">
+            <li>
+                <img src="img/retrato-ana.jpg" alt="Retrato de Ana Silva">
+                <h3>Ana Silva</h3>
+                <p>Diretora</p>
+            </li>
+            <li>
+                <img src="img/retrato-rui.jpg" alt="Retrato de Rui Marques">
+                <h3>Rui Marques</h3>
+                <p>Bibliotecário</p>
+            </li>
+            <li>
+                <img src="img/retrato-beatriz.jpg" alt="Retrato de Beatriz Lopes">
+                <h3>Beatriz Lopes</h3>
+                <p>Serviço educativo</p>
+            </li>
         </ul>
-        <h2>Morada</h2>
-        <p>Rua das Flores, 12<br>4700-312 Braga</p>
-        <p><a href="contactos.html">Falar com a biblioteca</a></p>
-    </aside>
+        </main>
+    </div>
+    <div class="pagina sem-lateral" id="contactos">
+        <main>
 
+        <h1>Contactos</h1>
+        <p>Rua das Flores, 12, 4700-312 Braga. Telefone 253 000 000, de segunda a sexta, entre as 9h30 e as 19h00.</p>
+
+        <form class="formulario" action="#" method="post">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto">
+            </div>
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button class="botao" type="submit">Enviar mensagem</button>
+        </form>
+        </main>
     </div>
 
     <footer class="rodape">
-        <div class="rodape-caixa">
-            <div>
-                <h2>Morada</h2>
-                <p>Rua das Flores, 12<br>4700-312 Braga</p>
+            <div class="rodape-caixa">
+                <div>
+                    <h2>Morada</h2>
+                    <p>Rua das Flores, 12<br>4700-312 Braga</p>
+                </div>
+                <div>
+                    <h2>Horário</h2>
+                    <ul>
+                        <li>Seg a Sex: 9h30 - 19h00</li>
+                        <li>Sábado: 10h00 - 13h00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contactos</h2>
+                    <ul>
+                        <li><a href="tel:+351253000000">253 000 000</a></li>
+                        <li><a href="mailto:geral@bibliotecadobairro.pt">geral@bibliotecadobairro.pt</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h2>Horário</h2>
-                <ul>
-                    <li>Seg a Sex: 9h30 - 19h00</li>
-                    <li>Sábado: 10h00 - 13h00</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Contactos</h2>
-                <ul>
-                    <li><a href="tel:+351253000000">253 000 000</a></li>
-                    <li><a href="mailto:geral@bibliotecadobairro.pt">geral@bibliotecadobairro.pt</a></li>
-                </ul>
-            </div>
-        </div>
-        <p class="rodape-base">Trabalho de Programação WEB I · João Riccio · 2026</p>
-    </footer>
+            <p class="rodape-base">Trabalho de Programação WEB I · João Riccio · 2026</p>
+        </footer>
 
 </body>
 

@@ -229,6 +229,13 @@ aside {
     grid-template-areas: "conteudo";
 }
 
+/* seccoes de uma pagina unica: a classe esta no proprio .pagina */
+.pagina.sem-lateral {
+    max-width: 62rem;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "conteudo";
+}
+
 /* ==========================================================
    4. Componentes
    ========================================================== */
@@ -548,6 +555,10 @@ aside {
     }
 
     .sem-lateral .pagina {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "conteudo";
+    }
+    .pagina.sem-lateral {
         grid-template-columns: minmax(0, 1fr);
         grid-template-areas: "conteudo";
     }
